@@ -1,0 +1,23 @@
+{
+  "name": "numo",
+  "version": "1.0.0",
+  "description": "Numerology cipher calculator CLI",
+  "main": "src/index.js",
+  "bin": {
+    "numo": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node test/cipher-tests.js",
+    "test-ciphers": "node test/cipher-tests.js",
+    "test-basic": "node src/index.js data/on_purpose_numo.md test_output.csv && echo 'Basic test completed successfully'",
+    "test-all": "node src/index.js --ciphers=all data/on_purpose_numo.md test_all_output.csv && echo 'All ciphers test completed successfully'",
+    "start": "node src/index.js"
+  },
+  "keywords": ["numerology", "cipher", "qabbala"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
